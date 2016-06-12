@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "basic frontend project boilerplate with automated npm scripts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "node-sass -o dist/css src/scss --output-style compressed --source-map-embed"
   },
   "keywords": [
     "boilerplate",
@@ -12,5 +12,8 @@
     "scripts"
   ],
   "author": "Sergio Peña <sergiop79@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^3.7.0"
+  }
 }
