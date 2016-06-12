@@ -5,7 +5,7 @@
   "scripts": {
     "css": "node-sass -o dist/css src/scss --output-style compressed --source-map-embed",
     "pug": "pug src/pug/*.pug --out dist -P",
-    "watch:css": "onchange src/scss/**/*.scss -- npm run css"
+    "watch:css": "onchange 'src/scss/**/*.scss' -- npm run css"
   },
   "keywords": [
     "boilerplate",
