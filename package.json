@@ -5,6 +5,7 @@
   "scripts": {
     "css": "node-sass -o dist/css src/scss --output-style compressed --source-map-embed",
     "pug": "pug src/pug/*.pug --out dist -P",
+    "serve": "browser-sync start --server dist --files dist",
     "watch:css": "onchange 'src/scss/**/*.scss' -- npm run css",
     "watch:pug": "onchange 'src/pug/**/*.pug' -- npm run pug"
   },
@@ -17,6 +18,7 @@
   "author": "Sergio Peña <sergiop79@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.13.0",
     "node-sass": "^3.7.0",
     "onchange": "^2.5.0",
     "pug-cli": "^1.0.0-alpha6"
