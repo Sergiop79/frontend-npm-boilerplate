@@ -7,7 +7,8 @@
     "pug": "pug src/pug/*.pug --out dist -P",
     "serve": "browser-sync start --server dist --files dist",
     "watch:css": "onchange 'src/scss/**/*.scss' -- npm run css",
-    "watch:pug": "onchange 'src/pug/**/*.pug' -- npm run pug"
+    "watch:pug": "onchange 'src/pug/**/*.pug' -- npm run pug",
+    "dev": "parallelshell 'npm run watch:css' 'npm run watch:pug' 'npm run serve'"
   },
   "keywords": [
     "boilerplate",
@@ -21,6 +22,7 @@
     "browser-sync": "^2.13.0",
     "node-sass": "^3.7.0",
     "onchange": "^2.5.0",
+    "parallelshell": "^2.0.0",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
