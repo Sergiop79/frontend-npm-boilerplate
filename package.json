@@ -4,6 +4,7 @@
   "description": "basic frontend project boilerplate with automated npm scripts",
   "scripts": {
     "css": "node-sass -o dist/css src/scss --output-style compressed --source-map-embed",
+    "pug": "pug src/pug/*.pug --out dist -P",
     "watch:css": "onchange src/scss/**/*.scss -- npm run css"
   },
   "keywords": [
@@ -16,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^3.7.0",
-    "onchange": "^2.5.0"
+    "onchange": "^2.5.0",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
