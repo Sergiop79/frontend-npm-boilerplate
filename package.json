@@ -17,6 +17,7 @@
     "lint:js": "eslint src/js/**/*.js",
     "lint": "npm run lint:sass && npm run lint:js"
   },
+  "pre-commit": ["lint"],
   "keywords": [
     "boilerplate",
     "frontend",
@@ -35,6 +36,7 @@
     "onchange": "^2.5.0",
     "parallelshell": "^2.0.0",
     "postcss-cli": "^2.5.2",
+    "precommit-hook": "^3.0.0",
     "pug-cli": "^1.0.0-alpha6",
     "sass-lint": "^1.7.0"
   }
