@@ -6,18 +6,21 @@
     "css": "node-sass -o dist/css src/scss --output-style compressed --source-map-embed",
     "postcss": "postcss -c config-postcss.json",
     "build:css": "npm run css && npm run postcss",
-    "pug": "pug src/pug/*.pug --out dist -P",
-    "js": "babel src/js --out-dir dist/js",
+    "build:pug": "pug src/pug/*.pug --out dist -P",
+    "build:js": "babel src/js --out-dir dist/js",
     "serve": "browser-sync start --server dist --files dist",
     "watch:css": "onchange 'src/scss/**/*.scss' -- npm run build:css",
-    "watch:pug": "onchange 'src/pug/**/*.pug' -- npm run pug",
-    "watch:js": "onchange 'src/js/**/*.js' -- npm run js",
+    "watch:pug": "onchange 'src/pug/**/*.pug' -- npm run build:pug",
+    "watch:js": "onchange 'src/js/**/*.js' -- npm run build:js",
     "watch:images": "onchange 'src/images/**/*' -- npm run images",
     "dev": "parallelshell 'npm run watch:css' 'npm run watch:pug' 'npm run watch:js' 'npm run watch:images' 'npm run serve'",
     "lint:sass": "sass-lint src/**/*.scss -c -v",
     "lint:js": "eslint src/js/**/*.js",
     "lint": "npm run lint:sass && npm run lint:js",
-    "images": "imagemin src/images/**/* -o dist/images"
+    "images": "imagemin src/images/**/* -o dist/images",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "npm run build:pug && npm run build:js && npm run build:css && npm run images"
   },
   "pre-commit": [
     "lint"
