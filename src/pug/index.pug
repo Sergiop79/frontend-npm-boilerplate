@@ -2,10 +2,27 @@
 html(lang="en")
 head
   meta(charset="UTF-8")
-  title Document
-  link(rel="stylesheet", href="css/main.css")
+  title Frontend boilerplate styleguide
+  link(rel="stylesheet", href="css/style.css")
 body
-  include ./partials/heading.pug
-
-  h3 this is a subheading on index.pug
-  script(src="js/index.js")
+  header.o-header
+    h1 Frontend boilerplate styleguide
+  main.o-main
+    include ./partials/headings
+    hr
+    include ./partials/headings-with-text
+    hr
+    include ./partials/block-elements.pug
+    hr
+    include ./partials/text-elements.pug
+    hr
+    include ./partials/monospace.pug
+    hr
+    include ./partials/list-types.pug
+    hr
+    include ./partials/tables.pug
+    hr
+    include ./partials/media.pug
+    hr
+    include ./partials/form-elements.pug
+    
