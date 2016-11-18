@@ -1,0 +1,11 @@
+
+b, strong {
+	font-weight: $bold-weight;
+}
+
+
+abbr[data-original-title], abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #777;
+    text-decoration: none;
+}

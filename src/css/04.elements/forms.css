@@ -1,0 +1,60 @@
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+  appearance: none; /* Removes awkward default styles on some inputs for iOS*/
+  background-color: transparent;
+  border: .1rem solid $color-quaternary;
+  border-radius: 0.2rem;
+  box-shadow: none;
+  height: 2.2rem;
+  padding: 0.2rem 0.5rem; /* The .6rem vertically centers text on FF, ignored by Webkit*/
+  width: 100%;
+
+  &:focus {
+    border-color: $color-primary;
+    outline: none;
+  }
+}
+
+/* <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>
+
+http://meyerweb.com/eric/tools/dencoder/
+
+<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>
+*/
+select {
+  background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2214%22%20viewBox%3D%220%200%2029%2014%22%20width%3D%2229%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M9.37727%203.625l5.08154%206.93523L19.54036%203.625%22%2F%3E%3C%2Fsvg%3E") center right no-repeat;
+  padding-right: 3rem;
+
+  &:focus {
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2214%22%20viewBox%3D%220%200%2029%2014%22%20width%3D%2229%22%3E%3Cpath%20fill%3D%22%239b4dca%22%20d%3D%22M9.37727%203.625l5.08154%206.93523L19.54036%203.625%22%2F%3E%3C%2Fsvg%3E");
+  }
+}
+
+textarea {
+  min-height: 6.5rem;
+}
+
+label,
+legend {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: $bold-weight;
+  margin-bottom: 0.5rem;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline;
+}

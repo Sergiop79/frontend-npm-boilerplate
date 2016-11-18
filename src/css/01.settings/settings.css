@@ -1,0 +1,40 @@
+/* Colors Settings */
+$color-initial: #fff !default;
+$color-primary: #9b4dca !default;
+$color-secondary: #606c76 !default;
+$color-tertiary: #f4f5f6 !default;
+$color-quaternary: #d1d1d1 !default;
+$color-quinary: #e1e1e1 !default;
+
+/* Typography settings */
+
+$google-fonts__url: 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
+
+$open-sans: 'Open Sans', sans-serif;
+
+$light-weight: 300;
+$regular-weight: 400;
+$bold-weight: 700;
+
+$ratio: 1.125;
+
+$base-line-height: 1.5;
+$base-font-size: 100;
+$leading: calc($base-font-size * $base-line-height);
+
+$body-font-family: $open-sans;
+$headings-font-family: $open-sans;
+
+$body-font-weight: $light-weight;
+$headings-font-weight: $regular-weight;
+
+$body-text-color: $color-secondary;
+$headings-color: black;
+
+$link-color: $color-primary;
+$link-color-hover: $color-secondary;
+$link-color-visited: $color-secondary;
+$link-color-active: $color-secondary;
+
+/* Spacing and textures */
+$gutter-width: 2rem;
