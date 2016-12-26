@@ -2,9 +2,13 @@ var postcss = require('postcss');
 
 module.exports = {
   use: [
+    'postcss-import',
+    'postcss-url',
+    'postcss-cssnext',
     'autoprefixer',
     'precss',
-    'cssnext'
+    'postcss-browser-reporter',
+    'postcss-reporter'
   ],
   autoprefixer: {
     browsers: ['last 2 version', '>5%']
