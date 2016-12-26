@@ -1,42 +1,37 @@
-
 html {
   font: $body-font-weight 100%/$base-line-height $body-font-family;
 }
 
-@media screen and (min-width: 75em) {
-  html {
-    font-size: 110%;
-  }
-}
-
 body {
+  background-image: linear-gradient(rgba(200, 50, 50, 0.25) 1px, transparent 1px);
+  background-size: 1px 1.5rem;
   text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6,
 p, ul, ol, dl, figure,
 blockquote, table, hr {
-  margin: 0 0 calc($base-line-height * 1rem) 0;
+  margin: calc($base-line-height * 1em) 0 calc($base-line-height * 1em) 0;
 }
 
 h1,
 .h1 {
-  font-size: calc(1rem * $ratio ^ 5);
+  font-size: calc(1rem * $ratio * $ratio * $ratio * $ratio * $ratio);
 }
 
 h2,
 .h2 {
-  font-size: calc(1rem * $ratio ^ 4);
+  font-size: calc(1rem * $ratio * $ratio * $ratio * $ratio);
 }
 
 h3,
 .h3 {
-  font-size: calc(1rem * $ratio ^ 3);
+  font-size: calc(1rem * $ratio * $ratio * $ratio);
 }
 
 h4,
 .h4 {
-  font-size: calc(1rem * $ratio ^ 2);
+  font-size: calc(1rem * $ratio * $ratio);
 }
 
 h5,
@@ -53,3 +48,4 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $headings-font-weight;
   color: $headings-color;
 }
+

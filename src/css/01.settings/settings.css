@@ -7,6 +7,7 @@ $color-quaternary: #d1d1d1 !default;
 $color-quinary: #e1e1e1 !default;
 
 /* Typography settings */
+/* https://matejlatin.github.io/Gutenberg/ */
 
 $google-fonts__url: 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
 
@@ -18,9 +19,9 @@ $bold-weight: 700;
 
 $ratio: 1.125;
 
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 $base-font-size: 100;
-$leading: calc($base-font-size * $base-line-height);
+$leading: resolve( $base-line-height * $base-font-size);
 
 $body-font-family: $open-sans;
 $headings-font-family: $open-sans;

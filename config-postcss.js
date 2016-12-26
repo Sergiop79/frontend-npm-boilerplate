@@ -5,8 +5,8 @@ module.exports = {
     'postcss-import',
     'postcss-url',
     'postcss-cssnext',
-    'autoprefixer',
     'precss',
+    'postcss-math',
     'postcss-browser-reporter',
     'postcss-reporter'
   ],
