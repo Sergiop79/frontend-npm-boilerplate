@@ -6,3 +6,7 @@
 @import '03.generic/normalize.css';
 
 @import '04.elements/index.css';
+
+@import '05.objects/index.css';
+
+@import '06.components/index.css';

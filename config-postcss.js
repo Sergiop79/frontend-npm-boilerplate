@@ -7,6 +7,7 @@ module.exports = {
     'postcss-cssnext',
     'precss',
     'postcss-math',
+    'postcss-strip-units',
     'postcss-browser-reporter',
     'postcss-reporter'
   ],

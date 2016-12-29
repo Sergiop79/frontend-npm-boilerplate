@@ -1,13 +1,17 @@
 /* Colors Settings */
+
+/* put here a pallete of colors */
+
+
+/* Principal colors */
 $color-initial: #fff !default;
 $color-primary: #9b4dca !default;
-$color-secondary: #606c76 !default;
+$color-secondary: #555555 !default;
 $color-tertiary: #f4f5f6 !default;
 $color-quaternary: #d1d1d1 !default;
 $color-quinary: #e1e1e1 !default;
 
 /* Typography settings */
-/* https://matejlatin.github.io/Gutenberg/ */
 
 $google-fonts__url: 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
 
@@ -17,11 +21,26 @@ $light-weight: 300;
 $regular-weight: 400;
 $bold-weight: 700;
 
-$ratio: 1.125;
+$ratio: 1.067;
 
-$base-line-height: 1.6;
-$base-font-size: 100;
-$leading: resolve( $base-line-height * $base-font-size);
+$baseline: 1.5rem;
+
+$basefont: 1rem;
+
+$minScreen: 20rem;
+$maxScreen: 50rem;
+$minFont: 1rem;
+$maxFont: 1.5rem;
+
+
+
+$h1: calc($(basefont) * $(ratio) * $(ratio) * $(ratio) * $(ratio) * $(ratio));
+$h2: calc($(basefont) * $(ratio) * $(ratio) * $(ratio) * $(ratio));
+$h3: calc($(basefont) * $(ratio) * $(ratio) * $(ratio));
+$h4: calc($(basefont) * $(ratio) * $(ratio));
+$h5: calc($(basefont) * $(ratio));
+$h6: $basefont;
+
 
 $body-font-family: $open-sans;
 $headings-font-family: $open-sans;
@@ -38,4 +57,4 @@ $link-color-visited: $color-secondary;
 $link-color-active: $color-secondary;
 
 /* Spacing and textures */
-$gutter-width: 2rem;
+$gutter-width: $baseline;
