@@ -1,0 +1,4 @@
+.grid-line {
+	background-image: linear-gradient(rgba(200, 50, 50, 0.25) 1px, transparent 1px);
+	background-size: 1px $baseline;
+}
