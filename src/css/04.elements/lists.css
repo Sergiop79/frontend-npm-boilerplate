@@ -14,9 +14,9 @@ ul {
 }
 
 ol {
-  list-style: decimal inside;
+  list-style: decimal outside;
 }
 
 ul {
-  list-style: circle inside;
+  list-style: circle outside;
 }
