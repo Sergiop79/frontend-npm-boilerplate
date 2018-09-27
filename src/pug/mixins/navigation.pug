@@ -1,0 +1,15 @@
+mixin navigation(pages)
+  - const isActive = p => currentPage === p.url ? 'navigation__item--active' : ''
+  - const isSubActive = p => currentPage === p.url ? 'navigation__subitem--active' : ''
+
+  nav.navigation
+    ul
+      each page in pages
+        li(class=`navigation__item ${isActive(page)}`)
+          a(href=page.url)= page.title
+          if page.child.length > 0
+            ul
+              each subPage in page.child
+                li(class=`navigation__subitem ${isSubActive(subPage)}`)
+                  a(href=subPage.url)=subPage.title
+

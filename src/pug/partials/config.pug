@@ -1,0 +1,44 @@
+- let siteName = 'Pug website'
+- let pageTitle = 'Home'
+- let metaDescription =  'Pug website example boilerplate'
+-
+  const pages = [
+    {
+      title: 'Home',
+      url: 'index.html',
+      child: []
+    },
+    {
+      title: 'About',
+      url: 'about.html',
+      child: []
+    },
+    {
+      title: 'Services',
+      url: 'services.html',
+      child: [
+        {
+          title: 'Service 1',
+          url: 'service-1.html',
+          child: []
+        },
+        {
+          title: 'Service 2',
+          url: 'service-2.html',
+          child: []
+        },
+        {
+          title: 'Service 3',
+          url: 'service-3.html',
+          child: []
+        },
+      ]
+    },
+    {
+      title: 'Contact',
+      url: 'contact.html',
+      child: []
+    }
+  ]
+
+- let currentPage = 'index.html'

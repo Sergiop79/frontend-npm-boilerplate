@@ -1,0 +1,11 @@
+.navigation {
+  border: 1px solid lightgray;
+}
+
+.navigation__item,
+.navigation__subitem {
+  &--active > a {
+    color: red;
+    font-weight: $bold-weight;
+  }
+}

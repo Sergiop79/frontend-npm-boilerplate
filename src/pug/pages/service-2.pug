@@ -1,10 +1,14 @@
 extends ../partials/base.pug
 
+append config
+  - pageTitle = 'Service 2'
+  - metaDescription = 'Service 3 page meta description'
+  - currentPage = 'service-2.html'
+
+block header
+  h1=pageTitle
+
 block content
-  h2 This a content block
+  h2 Service 2 content
 
   p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque ex dolores, voluptatibus eos quia distinctio quo tempora reiciendis tenetur incidunt perferendis unde maxime illum quaerat dolorem. Fugiat, perferendis placeat.
-
-append scripts-bottom
-  script.
-    console.log('Kaixo');
