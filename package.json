@@ -10,8 +10,9 @@
     "build:html": "pug src/pug/pages --pretty --out dist",
     "build:css": "npm run scss && npm run prefix",
     "build:js": "babel src/js -d dist/js",
-    "prebuild": "npm run clean && mkdir dist && mkdir -p dist/css && mkdir -p dist/js",
-    "build": "npm run build:css && npm run build:js && npm run build:html && echo 'BUILD OK'",
+    "build:images": "cp -R src/images dist && trimage -d dist/images",
+    "prebuild": "npm run clean && mkdir dist && mkdir -p dist/css && mkdir -p dist/js && mkdir -p dist/images",
+    "build": "npm run build:css && npm run build:js && npm run build:html && npm run build:images && echo 'BUILD OK'",
     "watch": "rerun-script",
     "serve": "browser-sync start --server './dist' --files './dist/**/*'",
     "dev": "npm run build && npm run watch & npm run serve"
