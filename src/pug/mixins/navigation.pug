@@ -2,7 +2,7 @@ mixin navigation(pages)
   - const isActive = p => currentPage === p.url ? 'navigation__item--active' : ''
   - const isSubActive = p => currentPage === p.url ? 'navigation__subitem--active' : ''
 
-  nav.navigation
+  nav.navigation#navigation
     ul
       each page in pages
         li(class=`navigation__item ${isActive(page)}`)

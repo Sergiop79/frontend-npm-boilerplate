@@ -1,5 +1,11 @@
 .navigation {
   border: 1px solid lightgray;
+  display: none;
+
+  
+  &.is-open {
+    display: block;
+  }
 }
 
 .navigation__item,
@@ -8,4 +14,39 @@
     color: red;
     font-weight: $bold-weight;
   }
+}
+
+
+.navigation__toggle {
+  position: relative;
+  display: block;
+  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+
+  &.is-open {
+    .close-icon {
+      display: block;
+    }
+    .hamburger-icon {
+      display: none;
+    }
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .close-icon {
+    display: none;
+  }
+}
+
+
+.hamburger-icon,
+.close-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
