@@ -1,0 +1,8 @@
+mixin icons(icons)
+  - const iconsFile = 'icons/icomoon.svg'
+  ul.icon-list
+    each icon in icons
+      li.icon-list__item
+        svg
+          use(xlink:href=`${iconsFile}#${icon.id}`)
+        span=icon.id
