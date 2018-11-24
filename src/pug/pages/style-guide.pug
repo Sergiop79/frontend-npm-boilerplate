@@ -7,32 +7,33 @@ head
   link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700")
   link(rel="stylesheet", href="/css/styles.css")
 body
-  a(href="#").grid-btn Grid On
+  //- a(href="#").grid-btn Grid On
 
-  header.o-header
+  header.pattern__header
     h1 Frontend boilerplate styleguide
-  main.o-main
-    include ../partials/vertical-rythm
+  
+  main.pattern__main
+    include ../partials/patterns/colors.pug
     hr
-    include ../partials/headings
+    include ../partials/patterns/vertical-rythm
     hr
-    include ../partials/headings-with-text
+    include ../partials/patterns/headings
     hr
-    include ../partials/block-elements.pug
+    include ../partials/patterns/headings-with-text
     hr
-    include ../partials/text-elements.pug
+    include ../partials/patterns/block-elements.pug
     hr
-    include ../partials/monospace.pug
+    include ../partials/patterns/text-elements.pug
     hr
-    include ../partials/list-types.pug
+    include ../partials/patterns/monospace.pug
     hr
-    include ../partials/tables.pug
+    include ../partials/patterns/list-types.pug
     hr
-    //- include ../partials/media.pug
+    include ../partials/patterns/tables.pug
+    hr
+    //- include ../partials/patterns/media.pug
     //- hr
-    include ../partials/form-elements.pug
-    hr
-    include ../partials/colors.pug
+    include ../partials/patterns/form-elements.pug
 
   script(src="js/index.js")
     

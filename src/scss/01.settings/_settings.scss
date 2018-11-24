@@ -18,12 +18,28 @@ $light-grey: #E2E2E2;
 
 
 // Principal colors
-$color-initial: #fff !default;
+$color-initial: $green-grey !default;
 $color-primary: $blue !default;
 $color-secondary: $red-light !default;
 $color-tertiary: $orange-light !default;
-$color-quaternary: #d1d1d1 !default;
-$color-quinary: #e1e1e1 !default;
+$color-quaternary: $orange-pastel !default;
+$color-quinary: $pink !default;
+
+:root {
+  --color-initial: #{$color-initial};
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-tertiary: #{$color-tertiary};
+  --color-quaternary: #{$color-quaternary};
+  --color-quinary: #{$color-quinary};
+  --color-black: #{$black};
+  --color-dark-grey: #{$dark-grey};
+  --color-mid-grey: #{$mid-grey};
+  --color-light-grey: #{$light-grey};
+}
+
+
+
 
 $social-hover-color: $red-pastel;
 

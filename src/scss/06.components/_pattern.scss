@@ -1,0 +1,58 @@
+.pattern__header,
+.pattern__main {
+  @include wrapper(90%, 45rem);
+}
+
+.colors-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.colors-list__swatch {
+  height: 200px;
+  border-radius: 1rem;
+}
+
+.color-list_swatch--initial {
+  background-color: var(--color-initial);
+}
+
+.color-list_swatch--primary {
+  background-color: var(--color-primary);
+}
+
+.color-list_swatch--secondary {
+  background-color: var(--color-secondary);
+}
+
+.color-list_swatch--tertiary {
+  background-color: var(--color-tertiary);
+}
+
+.color-list_swatch--quaternary {
+  background-color: var(--color-quaternary);
+}
+
+.color-list_swatch--quinary {
+  background-color: var(--color-quinary);
+}
+
+.color-list_swatch--black {
+  background-color: var(--color-black);
+}
+
+.color-list_swatch--dark-grey {
+  background-color: var(--color-dark-grey);
+}
+
+.color-list_swatch--mid-grey {
+  background-color: var(--color-mid-grey);
+}
+
+.color-list_swatch--light-grey {
+  background-color: var(--color-light-grey);
+}
