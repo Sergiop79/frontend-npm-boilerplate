@@ -27,18 +27,9 @@ html(lang="en")
     
     block navigation
       a(href="#" class="navigation__toggle" id="nav-toggle")
-        <svg viewBox="0 0 60 60" class="hamburger-icon">
-          <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke="#000" stroke-width="3">
-            <path d="M5 30h51M5 47h51M5 12h51"/>
-          </g>
-        </svg>
-
-        <svg viewBox="0 0 60 60" class="close-icon">
-          <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke="#000" stroke-width="3">
-            <path d="M56 47L5 12M56 12L5 47"/>
-          </g>
-        </svg>
-
+        <svg>
+          <use xlink:href="icons/icomoon.svg#icon-menu"></use>
+        </svg>        
 
       +navigation(pages)
 

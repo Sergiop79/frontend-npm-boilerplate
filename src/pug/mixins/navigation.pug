@@ -3,7 +3,11 @@ mixin navigation(pages)
   - const isSubActive = p => currentPage === p.url ? 'navigation__subitem--active' : ''
 
   nav.navigation#navigation
-    ul
+    button#navigation-close.navigation__close
+      <svg>
+        <use xlink:href="icons/icomoon.svg#icon-close"></use>
+      </svg> 
+    ul.navigation__list
       each page in pages
         li(class=`navigation__item ${isActive(page)}`)
           a(href=page.url)= page.title

@@ -54,7 +54,7 @@ $maxFont: 1.2rem;
 
 
 
-$h1: $basefont * $ratio * $ratio * $ratio * $ratio * $ratio * $ratio;
+$h1: $basefont * $ratio * $ratio * $ratio * $ratio * $ratio;
 $h2: $basefont * $ratio * $ratio * $ratio * $ratio;
 $h3: $basefont * $ratio * $ratio * $ratio;
 $h4: $basefont * $ratio * $ratio;
@@ -84,3 +84,6 @@ $spacing__m: 2rem;
 $spacing__l: 4rem;
 $spacing__xl: 8rem;
 $gutter-width: $baseline;
+
+// Content max-width
+$max-width: 64rem;

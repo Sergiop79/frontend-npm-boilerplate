@@ -10,9 +10,10 @@
     "build:html": "pug src/pug/pages --pretty --out dist",
     "build:css": "npm run scss && npm run prefix",
     "build:js": "babel src/js -d dist/js",
-    "build:images": "cp -R src/images dist && trimage -d dist/images",
+    "build:images": "imagemin src/images/* --out-dir=dist/images",
+    "build:icons": "cp -r src/icons dist/",
     "prebuild": "npm run clean && mkdir dist && mkdir -p dist/css && mkdir -p dist/js && mkdir -p dist/images",
-    "build": "npm run build:css && npm run build:js && npm run build:html && npm run build:images && echo 'BUILD OK'",
+    "build": "npm run build:css && npm run build:js && npm run build:html && npm run build:images && npm run build:icons && echo 'BUILD OK'",
     "watch": "rerun-script",
     "serve": "browser-sync start --server './dist' --files './dist/**/*'",
     "dev": "npm run build && npm run watch & npm run serve"
@@ -26,6 +27,12 @@
     ],
     "build:js": [
       "src/js/**/*.js"
+    ],
+    "build:images": [
+      "src/images/**/*"
+    ],
+    "build:icons": [
+      "src/icons/**/*"
     ]
   },
   "repository": {
@@ -47,7 +54,8 @@
     "autoprefixer": "^9.1.5",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.3",
+    "imagemin-cli": "^3.0.0",
     "node-sass": "^4.9.3",
     "postcss": "^7.0.3",
     "postcss-cli": "^6.0.0",

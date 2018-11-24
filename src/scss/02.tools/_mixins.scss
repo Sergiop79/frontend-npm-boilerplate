@@ -18,3 +18,10 @@
 		}
 	}
 }
+
+@mixin wrapper ($width, $max-width: $max-width) {
+  margin-left: auto;
+  margin-right: auto;
+  width: $width;
+  max-width: $max-width;
+}
